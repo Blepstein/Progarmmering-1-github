@@ -34,3 +34,5 @@ while True:
             continue
     except:
         print("Något är fel")
+
+print("Hej")
