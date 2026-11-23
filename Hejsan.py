@@ -30,4 +30,4 @@ print("Hej")
 if kammartyp == "fälla":
     hp-=rand.randint(10,30)
 
-if kammartyp == "kista"
+if kammartyp == "kista":
