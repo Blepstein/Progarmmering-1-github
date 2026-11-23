@@ -1,4 +1,5 @@
 import klasser
+import Pythonprojekt
 import random as rand
 
 if kammartyp == "fälla":

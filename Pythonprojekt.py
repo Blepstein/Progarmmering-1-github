@@ -6,21 +6,10 @@ str=0
 lvl=0
 inventory=["potion","Häxa"]
 
-class Player:
-    def __init__(self,strengh, hp, inventory, level):
-        self.strengh = strengh
-        self.hp = hp
-        self.inventory = inventory
-        self.level = level
-
-    def print_egenskaper(self):
-        print(f"Du har {self.strengh} strengh och {self.hp} hp har {self.inventory} inventory och är på {self.level} level")
-    
-
 #FÖR KISTOR OCH FÄLLOR
 frukter = ["Äpple", "Banan", "Drakfrukt"]
 # Äpple har vikt 70, Banan 25, Drakfrukt 5 (totalt 100)
-resultat = random.choices(frukter, weights=[70, 25, 5], k=1)
+resultat = rand.choices(frukter, weights=[70, 25, 5], k=1)
 
 print(f"Du hittade en {resultat[0]}!")
 
@@ -28,18 +17,17 @@ print(f"Du hittade en {resultat[0]}!")
 print("Detta är ett textbaserat äventyrsspel där du navigerar genom kammare i slott, samlar på dig föremål och slåss mot monster")
 namn=input("Vad vill du heta under spelens gång?")
 
-spelare = Player(str, hp, inventory, lvl)
+spelare = player (str, hp, inventory, lvl)
 spelare.print_egenskaper()
-
 
 #printa egnskaper + inventory
 
-import random
-
 dorrar = ["Monster", "Kista", "Fälla"]
-random.shuffle(dorrar)
+rand.shuffle(dorrar)
 
 while True:
+    try
+    input(f"Hej {namn} tryck s för att starta eller i för att se inventory")
     try:
         kammare = int(input("Välj mellan kammare 1 2 eller 3 "))
 
