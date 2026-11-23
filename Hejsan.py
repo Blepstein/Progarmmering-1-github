@@ -37,11 +37,11 @@ while True:
 
 print("Hej")
 
-while hp > 0:
-    hp = hp - 1
-    if hp < monster:
+while str > 0:
+    str = str - 1
+    if str < monster:
         print('Monstret slog ner dig!')
-    elif hp == monster:
+    elif str == monster:
         print('Oavgjort')
     else:
         print('Du slog ner monstret!')
