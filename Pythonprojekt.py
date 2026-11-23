@@ -24,17 +24,27 @@ class Player:
 print("Detta är ett textbaserat äventyrsspel där du navigerar genom kammare i slott, samlar på dig föremål och slåss mot monster")
 namn=input("Vad vill du heta under spelens gång?")
 
-print_egenskaper()
+spelare = Player(str, hp, inventory, lvl)
+spelare.print_egenskaper()
 
 
 #printa egnskaper + inventory
 
+import random
+
+dorrar = ["Monster", "Kista", "Fälla"]
+random.shuffle(dorrar)
+
 while True:
     try:
-        kammare=int(input("Välj mellan kammare 1 2 eller 3 "))
-        if kammare==1 or kammare==2 or kammare==3:
+        kammare = int(input("Välj mellan kammare 1 2 eller 3 "))
+
+        if kammare == 1 or kammare == 2 or kammare == 3:
             break
         else:
             continue
+
     except:
         print("Något är fel")
+
+print("Bakom dörren finns:", dorrar[kammare - 1])
