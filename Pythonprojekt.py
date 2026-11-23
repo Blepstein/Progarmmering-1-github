@@ -50,8 +50,5 @@ while True:
 
     except:
         print("Något är fel")
-<<<<<<< HEAD
-=======
 
 print("Bakom dörren finns:", dorrar[kammare - 1])
->>>>>>> c33b3a396f119b62a69a24bd7e0df9e8dec0a7eb
