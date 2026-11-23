@@ -14,3 +14,6 @@ class player:
 
     def print_egenskaper(self):
         print(f"Du har {self.strengh} strengh och {self.hp} hp har {self.inventory} inventory och är på {self.level} level")
+
+class monster:
+    
