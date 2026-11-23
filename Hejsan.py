@@ -36,3 +36,12 @@ while True:
         print("Något är fel")
 
 print("Hej")
+
+while hp > 0:
+    hp = hp - 1
+    if hp < monster:
+        print('Monstret slog ner dig!')
+    elif hp == monster:
+        print('Oavgjort')
+    else:
+        print('Du slog ner monstret!')
