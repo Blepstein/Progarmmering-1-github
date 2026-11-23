@@ -37,19 +37,15 @@ while True:
         else:
             continue
     except:
-<<<<<<< HEAD:Hejsan.py
         print("Något är fel")
 
 print("Hej")
 
-while hp > 0:
+while str > 0:
     hp = hp - 1
-    if hp < monster:
+    if str < monster:
         print('Monstret slog ner dig!')
-    elif hp == monster:
+    elif str == monster:
         print('Oavgjort')
     else:
         print('Du slog ner monstret!')
-=======
-        print("Något är fel")
->>>>>>> d2032c68422b0e63bd9c0df5e4722c7ca876960e:Pythonprojekt.py
