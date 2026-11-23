@@ -51,4 +51,16 @@ while True:
     except:
         print("Något är fel")
 
+monster = ""
+while str > 0:
+    hp = hp - 1
+    if str < monster:
+        print('Monstret slog ner dig!')
+    elif str == monster:
+        print('Oavgjort')
+    else:
+        print('Du slog ner monstret!')
+
+
 print("Bakom dörren finns:", dorrar[kammare - 1])
+
