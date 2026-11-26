@@ -1,5 +1,8 @@
 import klasser
 import random as rand
+import text
+
+text.print_title()
 
 hp=100
 str=0
