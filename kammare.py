@@ -1,11 +1,10 @@
 import klasser
 import Pythonprojekt
 import random as rand
-def fälla()
+def fälla():
     # if kammartyp == "fälla":
     hp-=rand.randint(10,30)
     print(f"Du stötte på en fälla och förlora {hp} hp")
-    continue
 
 
 svärd = klasser.inventory ("svärd",0,10)
