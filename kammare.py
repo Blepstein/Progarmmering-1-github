@@ -12,11 +12,11 @@ svärd = klasser.inventory ("svärd",0,10)
 dolk = klasser.inventory ("dolk",0,10)
 
 
-if kammartyp == "kista":
+if klasser.kammartyp == "kista":
     #FÖR KISTOR OCH FÄLLOR
     frukter = ["Äpple", "Banan", "Drakfrukt"]
     # Äpple har vikt 70, Banan 25, Drakfrukt 5 (totalt 100)
-    resultat = random.choices(frukter, weights=[70, 25, 5], k=1)
+    resultat = rand.choices(frukter, weights=[70, 25, 5], k=1)
     print(f"Du hittade en {resultat[0]}!")
 
 # #FÖR KISTOR OCH FÄLLOR
