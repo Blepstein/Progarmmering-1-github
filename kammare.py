@@ -4,7 +4,8 @@ import random as rand
 def fälla():
     # if kammartyp == "fälla":
     hp-=rand.randint(10,30)
-    print(f"Du stötte på en fälla och förlora {hp} hp")
+    print(f"Du stötte på en fälla och har kvar {hp} hp")
+
 
 
 svärd = klasser.inventory ("svärd",0,10)
