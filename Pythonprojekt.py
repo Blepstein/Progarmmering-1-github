@@ -4,16 +4,14 @@ import kammare
 import random as rand
 import text
 
-text.print_title()
 
 hp=100
 str=0
 lvl=0
 inventory=["potion","Häxa"]
 
-
-printasaker.print_början()
-spelare = klasser.player (10, 100, 1, inventory)
+spelarens_namn = printasaker.print_början()
+spelare = klasser.player (10, 100, inventory, 1)
 
 
 dorrar = ["Monster", "Kista", "Fälla"]
@@ -21,7 +19,7 @@ rand.shuffle(dorrar)
 kammartyp=dorrar[0]
 
 while True:
-    val= input(f"Hej {printasaker.namn} tryck s för att starta eller i för att se inventory eller e för egenskaper")
+    val= input(f"Hej {spelarens_namn} tryck s för att starta eller i för att se inventory eller e för egenskaper")
     if val=="s":
         print("Test")
     elif val=="i":
