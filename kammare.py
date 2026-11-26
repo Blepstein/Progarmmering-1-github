@@ -1,24 +1,28 @@
 import klasser
 import Pythonprojekt
 import random as rand
-
-if kammartyp == "fälla":
+def fälla()
+    # if kammartyp == "fälla":
     hp-=rand.randint(10,30)
     print(f"Du stötte på en fälla och förlora {hp} hp")
     continue
 
 
-svärd = inventory ("svärd",0,10)
-dolk = inventory ("dolk",0,10)
+svärd = klasser.inventory ("svärd",0,10)
+dolk = klasser.inventory ("dolk",0,10)
 
 
-if kammartyp == "kista":
-    inventory.append[""]
+if klasser.kammartyp == "kista":
+    #FÖR KISTOR OCH FÄLLOR
+    frukter = ["Äpple", "Banan", "Drakfrukt"]
+    # Äpple har vikt 70, Banan 25, Drakfrukt 5 (totalt 100)
+    resultat = rand.choices(frukter, weights=[70, 25, 5], k=1)
+    print(f"Du hittade en {resultat[0]}!")
 
-#FÖR KISTOR OCH FÄLLOR
-frukter = ["Äpple", "Banan", "Drakfrukt"]
-# Äpple har vikt 70, Banan 25, Drakfrukt 5 (totalt 100)
-resultat = random.choices(frukter, weights=[70, 25, 5], k=1)
+# #FÖR KISTOR OCH FÄLLOR
+# frukter = ["Äpple", "Banan", "Drakfrukt"]
+# # Äpple har vikt 70, Banan 25, Drakfrukt 5 (totalt 100)
+# resultat = random.choices(frukter, weights=[70, 25, 5], k=1)
 
 monster = ""
 while hp > 0:
