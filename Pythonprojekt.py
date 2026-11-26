@@ -17,7 +17,7 @@ print(f"Du hittade en {resultat[0]}!")
 print("Detta är ett textbaserat äventyrsspel där du navigerar genom kammare i slott, samlar på dig föremål och slåss mot monster")
 namn=input("Vad vill du heta under spelens gång?")
 
-spelare = player (str, hp, inventory, lvl)
+spelare = klasser.player (9, 100, 6, 7)
 spelare.print_egenskaper()
 
 #printa egnskaper + inventory
@@ -26,7 +26,6 @@ dorrar = ["Monster", "Kista", "Fälla"]
 rand.shuffle(dorrar)
 
 while True:
-    try
     input(f"Hej {namn} tryck s för att starta eller i för att se inventory")
     try:
         kammare = int(input("Välj mellan kammare 1 2 eller 3 "))
@@ -39,15 +38,7 @@ while True:
     except:
         print("Något är fel")
 
-monster = ""
-while str > 0:
-    hp = hp - 1
-    if str < monster:
-        print('Monstret slog ner dig!')
-    elif str == monster:
-        print('Oavgjort')
-    else:
-        print('Du slog ner monstret!')
+
 
 
 print("Bakom dörren finns:", dorrar[kammare - 1])

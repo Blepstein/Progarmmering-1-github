@@ -19,3 +19,13 @@ if kammartyp == "kista":
 frukter = ["Äpple", "Banan", "Drakfrukt"]
 # Äpple har vikt 70, Banan 25, Drakfrukt 5 (totalt 100)
 resultat = random.choices(frukter, weights=[70, 25, 5], k=1)
+
+monster = ""
+while hp > 0:
+    hp = hp - 1
+    if str < monster:
+        print('Monstret slog ner dig!')
+    elif str == monster:
+        print('Oavgjort')
+    else:
+        print('Du slog ner monstret!')

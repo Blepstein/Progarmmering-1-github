@@ -1,5 +1,5 @@
 class inventory:
-    def inven (self,name, attribute, strengh_bonus):
+    def __init__ (self,name, attribute, strengh_bonus):
         self.name = name
         self.attribute = attribute
         self.strengh_bonus = strengh_bonus
@@ -16,4 +16,6 @@ class player:
         print(f"Du har {self.strengh} strengh och {self.hp} hp har {self.inventory} inventory och är på {self.level} level")
 
 class monster:
+    def __init__(self,strengh):
+        pass
     
