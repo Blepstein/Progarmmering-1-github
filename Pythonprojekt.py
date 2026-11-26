@@ -22,8 +22,10 @@ spelare.print_egenskaper()
 
 #printa egnskaper + inventory
 
+
 dorrar = ["Monster", "Kista", "Fälla"]
 rand.shuffle(dorrar)
+kammartyp=dorrar[0]
 
 while True:
     input(f"Hej {namn} tryck s för att starta eller i för att se inventory")
