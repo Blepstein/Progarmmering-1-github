@@ -25,7 +25,9 @@ if klasser.kammartyp == "kista":
 # resultat = random.choices(frukter, weights=[70, 25, 5], k=1)
 
 monster = ""
-while hp > 0:
+def monster_fight():
+#while hp > 0:
+#Det ska väl inte vara hp-1 ibörjan
     hp = hp - 1
     if str < monster:
         print('Monstret slog ner dig!')
