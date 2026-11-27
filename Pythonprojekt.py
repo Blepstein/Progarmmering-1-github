@@ -38,6 +38,12 @@ while True:
         except:
             print("Något är fel")
     print("Bakom dörren finns:", dorrar[kammare - 1])
+    if kammartyp=="Monster":
+        kammare.monster_fight()
+    elif kammartyp=="Fälla":
+        kammare.fälla()
+    elif kammartyp=="Kista":
+        kammare.kista()
 
 
 

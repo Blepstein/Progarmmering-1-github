@@ -12,7 +12,8 @@ svärd = klasser.inventory ("svärd",0,10)
 dolk = klasser.inventory ("dolk",0,10)
 
 
-if klasser.kammartyp == "kista":
+#if klasser.kammartyp == "kista":
+def kista():
     #FÖR KISTOR OCH FÄLLOR
     frukter = ["Äpple", "Banan", "Drakfrukt"]
     # Äpple har vikt 70, Banan 25, Drakfrukt 5 (totalt 100)
