@@ -3,7 +3,7 @@ import Pythonprojekt
 import random as rand
 def fälla():
     # if kammartyp == "fälla":
-    hp-=rand.randint(10,30)
+    hp -= rand.randint(10,30)
     print(f"Du stötte på en fälla och har kvar {hp} hp")
 
 
@@ -18,7 +18,9 @@ def kista():
     frukter = ["Äpple", "Banan", "Drakfrukt"]
     # Äpple har vikt 70, Banan 25, Drakfrukt 5 (totalt 100)
     resultat = rand.choices(frukter, weights=[70, 25, 5], k=1)
+    Pythonprojekt.inventory.append(resultat)
     print(f"Du hittade en {resultat[0]}!")
+    #om kistans items är mer än fem ska man behöva byta ut den
 
 # #FÖR KISTOR OCH FÄLLOR
 # frukter = ["Äpple", "Banan", "Drakfrukt"]

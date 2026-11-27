@@ -10,8 +10,9 @@ str=0
 lvl=0
 inventory=["potion","Häxa"]
 
+text.print_title()
 spelarens_namn = printasaker.print_början()
-spelare = klasser.player (10, 100, inventory, 1)
+spelare = klasser.player (str, hp, inventory, lvl)
 
 
 dorrar = ["Monster", "Kista", "Fälla"]
@@ -19,13 +20,17 @@ rand.shuffle(dorrar)
 kammartyp=dorrar[0]
 
 while True:
-    val= input(f"Hej {spelarens_namn} tryck s för att starta eller i för att se inventory eller e för egenskaper")
-    if val=="s":
-        print("Test")
-    elif val=="i":
-        print(inventory)
-    elif val=="e":
-        spelare.print_egenskaper()
+    while True:
+        val= input(f"Hej {spelarens_namn} tryck s för att starta eller i för att se inventory eller e för egenskaper")
+        if val=="s":
+            break
+        elif val=="i":
+            print(inventory)
+        elif val=="e":
+            spelare.print_egenskaper()
+        else:
+            print("Skriv s i eller e")
+
     while True:
         try:
             kammare = int(input("Välj mellan kammare 1 2 eller 3 "))
@@ -36,7 +41,7 @@ while True:
                 print("Skriv 1 2 eller 3")
                 continue
         except:
-            print("Något är fel")
+            print("Skriv 1 2 eller 3 med siffror")
     print("Bakom dörren finns:", dorrar[kammare - 1])
     if kammartyp=="Monster":
         kammare.monster_fight()
